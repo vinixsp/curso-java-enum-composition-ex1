@@ -61,7 +61,7 @@ public class Program {
 		
 		System.out.println("Nome: " + worker.getName());
 		System.out.println("Departamento: " + worker.getDepartment().getName());
-		System.out.println("Renda para " + mes_ano + ": " + worker.income(month, year));
+		System.out.println("Renda para " + mes_ano + ": " + String.format("%.2f", worker.income(month, year)));
 		
 		sc.close();
 	}
